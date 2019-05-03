@@ -56,6 +56,7 @@ from synapse.handlers.device import DeviceHandler, DeviceWorkerHandler
 from synapse.handlers.devicemessage import DeviceMessageHandler
 from synapse.handlers.e2e_keys import E2eKeysHandler
 from synapse.handlers.e2e_room_keys import E2eRoomKeysHandler
+from synapse.handlers.ephemeral import EphemeralEventHandler
 from synapse.handlers.events import EventHandler, EventStreamHandler
 from synapse.handlers.groups_local import GroupsLocalHandler
 from synapse.handlers.initial_sync import InitialSyncHandler

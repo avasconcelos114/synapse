@@ -171,6 +171,12 @@ class RoomStateEventRestServlet(ClientV1RestServlet):
                 action=membership,
                 content=content,
             )
+        elif event_type == EventTypes.Ephemeral:
+            event = yield self.event_creation_handler.create_and_send_nonmember_event(
+                requester,
+                event_dict,
+                txn_id=txn_id,
+            )
         else:
             event = yield self.event_creation_handler.create_and_send_nonmember_event(
                 requester,

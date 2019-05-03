@@ -81,6 +81,7 @@ class EventTypes(object):
     Message = "m.room.message"
     Topic = "m.room.topic"
     Name = "m.room.name"
+    Ephemeral = "m.room.ephemeral"
 
     ServerACL = "m.room.server_acl"
     Pinned = "m.room.pinned_events"
